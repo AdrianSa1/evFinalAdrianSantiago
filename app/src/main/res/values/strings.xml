@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yu-GI-OH</string>
+    <string name="web_client_id">109229128933094326678</string>
+    <string name="informacion">YUGIOH</string>
+    <string name="descripcion">YUGIOH TG \LAS CARTAS PARA TI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

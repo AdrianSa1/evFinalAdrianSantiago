@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.adrian.efinal.ui.fragments.YugiListFragment"
+        android:label="fragment_note_list"
+        tools:layout="@layout/fragment_yugi_list" >
+        <action
+            android:id="@+id/action_noteListFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFavoriteFragment"
+        android:name="com.adrian.efinal.ui.fragments.YugiFavoriteFragment"
+        android:label="fragment_note_favorite"
+        tools:layout="@layout/fragment_yugi_favorite" >
+        <action
+            android:id="@+id/action_noteFavoriteFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.adrian.efinal.ui.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/cardDetailFragment"
+        android:name="com.adrian.efinal.ui.fragments.CardDetailFragment"
+        android:label="fragment_card_detail"
+        tools:layout="@layout/fragment_card_detail" >
+        <argument
+            android:name="card"
+            app:argType="com.adrian.efinal.model.Card" />
+    </fragment>
+</navigation>
